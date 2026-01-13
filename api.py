@@ -4,19 +4,12 @@ from openai import OpenAI
 import re
 import json
 
-OPENAI_API_KEY="sk-FQcyPH5HbquR1MuVntBY92mbkGKpsW13rtiQKvYLirvH9m6s"
-OPENAI_BASE_URL="https://api.whatai.cc/v1"
-# OPENAI_BASE_URL = "https://api.whatai.cc/v1/chat/completions"
+OPENAI_API_KEY=""
+OPENAI_BASE_URL=""
 
-# QWEN_API_KEY="sk-fb7284f094f947b887d7caa774c30c9c"
-# QWEN_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
+LLAMA_API_KEY=""
+LLAMA_BASE_URL=""
 
-LLAMA_API_KEY="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"
-LLAMA_BASE_URL="https://openrouter.ai/api/v1"
-
-# meta-llama/llama-3-70b-instruct
-# https://openrouter.ai/api/v1
-# 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
 
 def extract_gpt_content(message):
     # json_pattern = re.compile(r'```json\n([\s\S]*?)\n```', re.DOTALL)
